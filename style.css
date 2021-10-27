@@ -1,7 +1,8 @@
 .header{
-    position: relative;
+    position: absolute;
     background-color: #141414;
     height: 70px;
+    width: 100%;
     padding-top: 0px;
     box-shadow: black 0px 0px 10px 1px;
     z-index: 1;
@@ -12,13 +13,6 @@
     width: 100%;
     position: static;
     z-index: -1;
-}
-
-.icon-img{
-    position: absolute;
-    padding: 0px 0px 0px 0px;
-    right: 2%;
-    margin-top: 10px;
 }
 
 header {
@@ -35,24 +29,40 @@ html, body {
     background-color: rgb(255, 255, 255);
 }
 
-.flag-icon{
-    box-shadow: black 1px 1px 5px 1px;
+.lang-group
+{
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    right: 20px;
+    width: 90px;
+    background-color: wheat;
+}
+
+.icon-img{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 25px;
+    height: 20px;
 }
 
 .flag-text{
+    margin-top: 11px;
+    margin-left: 0px;
+    top: 0px;
     position: absolute;
-    right: 7%;
-    top: -4px;
     font-style: oblique;
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-}
+} 
+
 
 .header-text{
     position: absolute;
-    left: 10%;
-    top: -30px;
+    margin: 0px 0px 0px 10px;
+    width: 0px;
+    top: 15px;
     font-size: 28pt;
     font-family: Forte;
     color: white;
@@ -103,4 +113,31 @@ body{
     /* top: 0px; */
     z-index: 0;
     text-align: justify;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    background-color: #575757;
+    min-width: 110px;
+    min-height: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1px 10px 1px 10px;
+    z-index: 1;
+}
+
+.dropdown-content .icon-img{
+    right: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
