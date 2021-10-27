@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">Forte</p>
+        <div class="flag-containter">
+            <p class="flag-text">English</p>
+            <img class="icon-img" width=25px height=20px src="img/UK.jpg">
+        </div>
+    </div>
+    <img class="demo-pic" src="img/learning.jpg">
+    <div class="floater">
+        <button type="button" class="collapsible">About Us</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend vel est non pretium. Sed vel erat vel mauris dictum lobortis. Praesent id eros suscipit, scelerisque orci id, auctor risus. Nunc nec dignissim leo, in gravida libero. Sed nisl lacus, rhoncus vitae tortor sit amet, dapibus tempor urna. Donec id sem hendrerit, fringilla velit sit amet, fermentum ipsum. In hac habitasse platea dictumst. Nulla quis rhoncus dolor. Maecenas et nulla luctus, facilisis neque vel, facilisis enim. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div> 
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+    </div>
+</body>
+</html>
