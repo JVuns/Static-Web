@@ -75,7 +75,8 @@ body{
 
 .floater{
     position: absolute;
-    top: 160px;
+    top: 100px;
+    left: 10px;
     width: 100%;
 }
 
