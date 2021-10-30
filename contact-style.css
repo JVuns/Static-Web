@@ -103,10 +103,3 @@ body{
     color: white;
     text-align: center;
 }
-
-.home-content{
-    position: absolute;
-    background-color:white;
-    top: 200px;
-    height: 250px;
-}
