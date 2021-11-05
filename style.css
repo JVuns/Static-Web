@@ -3,6 +3,11 @@
     src: url('fonts/Exo2-Italic-VariableFont_wght.ttf');
     font-weight: normal;
     font-style: normal;
+
+    font-family: 'Chloe';
+    src: url('fonts/Chloe/Chloe-Regular.otf');
+    font-weight: 700;
+
 }
 
 .header-style{
@@ -14,58 +19,50 @@
     opacity: 100%;
 }
 
+.header-style h1{
+    position: absolute;
+    margin-top: 30px;
+    left: 120px;
+    font-family: 'Chloe';
+    color: #D6940F;
+}
+
+.header-style .menu-bar{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.header-style ul li{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-family: 'Chloe';
+    font-style: normal;
+
+}.header-style a{
+    transition-duration: 200ms;
+    color: black;
+    text-decoration: none;
+}
+
+.header-style a:hover{
+    color: red;
+    transition-duration: 200ms;
+}
+
+.header-style li{
+    color: burlywood;
+}
+
 .line{
     position: absolute;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    right: 150px;
     top: 5px;
     width: 2px;
     height: 90px;
     background-color: rgb(181, 184, 42);
-}
-
-.dropbtn{
-    width: 150px;
-    height: 100px;
-    border-style: none;
-    color: rgb(134, 98, 45);
-    background-color: rgb(236, 245, 158);
-}
-
-.dropbtn:hover{
-    background-color: rgb(215, 226, 116);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-.dropdown{
-    position: absolute;
-    right: 0px;
-    margin-top: 0px
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 150px;
-    max-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover{
-    background-color: rgb(204, 204, 204);
 }
 
 .background-style1{
@@ -101,7 +98,8 @@ body{
 }
 
 .title-style h1{
-    margin-top: 50%;
+    margin-top: 100px;
+    
 }
 
 .aboutbtn{
@@ -112,6 +110,7 @@ body{
     width: 100px;
     height: 40px;
 }
+
 .contactbtn{
     background-color: rgb(63, 63, 63);
     border-style: none;
@@ -123,7 +122,7 @@ body{
 
 .title-style h1{
     margin: 4px 10px 10px 10px;
-    padding-top: 20%;
+    padding-top: 150px;
     color: white;
     text-align: center;
 }
