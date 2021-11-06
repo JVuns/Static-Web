@@ -3,71 +3,71 @@
     src: url('fonts/Exo2-Italic-VariableFont_wght.ttf');
     font-weight: normal;
     font-style: normal;
+
+    font-family: 'Woodland';
+    src: url('fonts/PP\ Woodland\ Ultralight\ 200.otf');
+
+    font-family: 'Chloe';
+    src: url('fonts/Chloe/Chloe-Regular.otf');
+    font-weight: 700;
+
 }
 
 .header-style{
-    position: absolute;
-    background-color: rgb(236, 245, 158);
+    position: relative;
+    background-color: #dae8c2;
     width: 100%;
     height: 100px;
     margin: 0px 0px 0px 0px;
     opacity: 100%;
-    box-shadow: rgb(159, 167, 96) 0px 0px 10px 0px;
-    opacity: 90%;
+    box-shadow: 0px 0px 4px 0px;
+    z-index: 4;
+}
+
+.header-style h1{
+    position: absolute;
+    margin-top: 30px;
+    left: 120px;
+    font-family: 'Chloe';
+    color: #D6940F;
+}
+
+.header-style .menu-bar{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.header-style ul li{
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    font-family: 'Chloe';
+    font-style: normal;
+
+}.header-style a{
+    transition-duration: 200ms;
+    color: black;
+    text-decoration: none;
+}
+
+.header-style a:hover{
+    color: red;
+    transition-duration: 200ms;
+}
+
+.header-style li{
+    color: burlywood;
 }
 
 .line{
     position: absolute;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    right: 150px;
     top: 5px;
     width: 2px;
     height: 90px;
     background-color: rgb(181, 184, 42);
-}
-
-.dropbtn{
-    width: 150px;
-    height: 100px;
-    border-style: none;
-    color: rgb(134, 98, 45);
-    background-color: rgb(236, 245, 158);
-}
-
-.dropbtn:hover{
-    background-color: rgb(215, 226, 116);
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-.dropdown{
-    position: absolute;
-    right: 0px;
-    margin-top: 0px
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 150px;
-    max-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-.dropdown-content a{
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover{
-    background-color: rgb(204, 204, 204);
 }
 
 .background-style1{
@@ -80,8 +80,6 @@
 
 body{
     margin: 0px 0px 0px 0px;
-    background-color: rgb(247, 252, 208);
-    background-image: url(img/cpu.jpg);
 }
 
 .logo-style{
@@ -94,70 +92,78 @@ body{
 
 .title-style{
     background-color: black;
-    height: 50px;
+    height: 300px;
     width: 100%;
-    position: absolute;
+    position: relative;
     font-family: Exo2;
-    top: 100px;
-    opacity: 80%;
+    opacity: 100%;
+    background-image: url(img/Technician2.jpg);
+    background-size: 1600px 1000px;
+    background-repeat: no-repeat;
+}
+
+.title-style h1{
+    margin-top: 100px;
+    
+}
+
+.aboutbtn{
+    background-color: rgb(179, 12, 12);
+    border-style: none;
+    color: white;
+    opacity: 100%;
+    width: 100px;
+    height: 40px;
+}
+
+.contactbtn{
+    background-color: rgb(63, 63, 63);
+    border-style: none;
+    color: white;
+    opacity: 100%;
+    width: 100px;
+    height: 40px;
 }
 
 .title-style h1{
     margin: 4px 10px 10px 10px;
+    padding-top: 150px;
     color: white;
     text-align: center;
 }
 
-.about-content1{
-    background-color: rgba(255, 255, 255);
+.title-style div{
     position: absolute;
-    border-radius: 0px 0px 25px 25px;
-    box-shadow: 4px 4px 4px -2px black;
-    width: 80%;
-    top: 150px;
-    height: 250px;
-}
-.about-content1 p{
-    position: absolute;
-    text-align: justify;
-    top: 20%;
-    font-weight: bold;
-    font-size: 20pt;
-    bottom: 0px;
-    left: 420px;
-    right: 50px;
-}
-.about-content1 img{
-    position: absolute;
-    height: 250px;
-    margin-left: 0%;
-    box-shadow: 10px 0 20px -2px #888;
+    right: 50%;
+    transform: translateX(50%);
 }
 
-.about-content2{
-    background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    border-radius: 25px 25px 25px 25px;
-    box-shadow: 4px 4px 4px -2px black;
-    width: 80%;
-    right: 10%;
-    top: 500px;
-    height: 250px;
-}
-.about-content2 p{
-    position: absolute;
-    text-align: justify;
-    top: 20%;
-    font-weight: bold;
-    font-size: 20pt;
-    bottom: 0px;
-    left: 420px;
-    right: 50px;
-}
-.about-content2 img{
-    position: absolute;
-    height: 250px;
-    margin-left: 0%;
-    box-shadow: 10px 0 20px -2px #888;
+.black-pane{
+    width: 100%;
+    height: 100%;
 }
 
+.home-content{
+    position: absolute;
+    background-color:#fef8bf;
+    top: 100px;
+    height: 800px;
+    width: 100%;
+}
+
+.home-content h1{
+    margin-left: 50%;
+    transform: translateX(-7.5%);
+    color: black;
+    font-family: 'Chloe';
+}
+
+.home-content p{
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: 'Woodland';
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-size: 15px;
+}
