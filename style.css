@@ -24,10 +24,13 @@
 
 .header-style h1{
     position: absolute;
-    margin-top: 30px;
-    left: 120px;
+    margin-top: 25px;
+    left: 140px;
     font-family: 'Chloe';
     color: #D6940F;
+    letter-spacing: 4px;
+    font-size: 50px;
+
 }
 
 .header-style .menu-bar{
