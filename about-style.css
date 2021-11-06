@@ -188,13 +188,15 @@ body{
     border-style: none;
     background-color: rgb(43, 226, 125);
     top: 25%;
+    width: 40px;
+    height: 40px;
 }
 
 .home-content .leftButton{
-    left: 200px
+    left: 240px
 }
 
 
 .home-content .rightButton{
-    right: 200px;
+    right: 240px;
 }
