@@ -83,7 +83,6 @@
 
 body{
     margin: 0px 0px 0px 0px;
-    height: 5400px;
 }
 
 .logo-style{
@@ -183,21 +182,26 @@ body{
 
 .container{
     position: relative;
-    margin-top: 50px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
     position: 0px 0px 0px 0px;
-    width: 500px;
-    height: 300px;
+    min-width: 500px;
+    min-height: 300px;
+    aspect-ratio: 2.5/1;
+    max-width: 1519px;
+    max-height: 1100px;
 }
 
 .container button{
     position: absolute;
     border-style: none;
-    background-color: rgb(43, 226, 125);
+    background-color: rgb(159, 240, 195);
     top: 50%;
     width: 40px;
     height: 40px;
+    opacity: 60%;
 }
 
 .container .leftButton{
@@ -224,4 +228,49 @@ body{
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
+}
+
+.slide-context{
+    position: absolute;
+    padding: 5px 5px 5px 5px;
+    margin: 0 0 0 0;
+    z-index: 2;
+    bottom: 0%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+}
+
+footer{
+    background-color: rgb(63, 63, 63);
+    height: 100px;
+    width: 100%;
+}
+
+footer p{
+    position: absolute;
+    margin-top: 0px;
+    font-family: "Chloe";
+    color: rgb(223, 223, 223);
+    letter-spacing: 2px;
+}
+footer ul{
+    position: absolute;
+    right: 0px;
+    margin-bottom: 10px;
+    padding-right: 25px;
+}
+
+footer li{
+    float: left;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
 }
