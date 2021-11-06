@@ -12,11 +12,14 @@
 
 .header-style{
     position: relative;
-    background-color: #dae8c2;
+    background-color: #fffdef;
     width: 100%;
     height: 100px;
     margin: 0px 0px 0px 0px;
     opacity: 100%;
+    box-shadow: white 10px 10px 10px 10px;
+    box-shadow: black 0px 0px 4px 0px;
+    z-index: 4;
 }
 
 .header-style h1{
@@ -103,21 +106,39 @@ body{
 }
 
 .aboutbtn{
+    text-decoration: none;
     background-color: rgb(179, 12, 12);
     border-style: none;
     color: white;
     opacity: 100%;
     width: 100px;
     height: 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
 }
 
 .contactbtn{
+    text-decoration: none;
     background-color: rgb(63, 63, 63);
     border-style: none;
     color: white;
     opacity: 100%;
     width: 100px;
     height: 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+}
+
+.aboutbtn:hover{
+    text-decoration: none;
+    background-color: rgb(126, 6, 6);
+    transition-duration: 200ms;
+}
+
+.contactbtn:hover{
+    text-decoration: none;
+    background-color: rgb(116, 116, 116);
+    transition-duration: 200ms;
 }
 
 .title-style h1{
@@ -142,7 +163,7 @@ body{
 .home-content{
     position: absolute;
     background-color:#fef8bf;
-    top: 600px;
+    top: 500px;
     height: 400px;
     width: 100%;
     box-shadow: 0px -1px 40px 0px;
