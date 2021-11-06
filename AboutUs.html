@@ -38,6 +38,34 @@
                 sama PT. Agung Tetradahayu Teknik siap menghadapi tantangan masa yang
                 akan datang dengan memperkuat dan mengoptimalkan bisnis yang telah
                 berjalan.</p>
+                <div class="container">
+                    <img class="mySlides" src="img/Technician2.jpg" style="width:50%; height:50%">
+                    <img class="mySlides" src="img/Technician.jpg" style="width:50%; height:50%">
+                    <img class="mySlides" src="img/Worker1.jpg" style="width:50%; height:50%">
+                  
+                    <button class="leftButton button" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="rightButton button" onclick="plusDivs(1)">&#10095;</button>
+                  </div>
+                  
+                  <script>
+                  var slideIndex = 1;
+                  showDivs(slideIndex);
+                  
+                  function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                  }
+                  
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                  }
+                  </script>
         </div>
     </body>
 </html> 

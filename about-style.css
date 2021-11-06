@@ -167,3 +167,34 @@ body{
     line-height: 30px;
     font-size: 15px;
 }
+
+.home-content img{
+    position: absolute;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-content .container{
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 800px;
+}
+
+.home-content button{
+    position: absolute;
+    border-style: none;
+    background-color: rgb(43, 226, 125);
+    top: 25%;
+}
+
+.home-content .leftButton{
+    left: 200px
+}
+
+
+.home-content .rightButton{
+    right: 200px;
+}
