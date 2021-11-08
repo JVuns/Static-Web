@@ -13,6 +13,8 @@
 
 }
 
+
+
 .header-style{
     position: relative;
     background-color: #fffdef;
@@ -182,14 +184,14 @@ body{
 
 .container{
     position: relative;
-    /* margin-top: 50px;
-    margin-bottom: 50px; */
-    /* margin-left: 50%;
-    transform: translateX(-50%); */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
     position: 0px 0px 0px 0px;
     min-width: 500px;
     min-height: 300px;
-    aspect-ratio: 2.5/1;
+    aspect-ratio: 1.6/1;
     max-width: 1519px;
     max-height: 1100px;
 }

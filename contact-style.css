@@ -167,3 +167,36 @@ body{
     width: 100%;
     box-shadow: 0px -1px 40px 0px;
 }
+
+
+footer{
+    background-color: rgb(63, 63, 63);
+    height: 100px;
+    width: 100%;
+    z-index: 3;
+}
+
+footer p{
+    position: absolute;
+    margin-top: 0px;
+    font-family: "Chloe";
+    color: rgb(223, 223, 223);
+    letter-spacing: 2px;
+}
+footer ul{
+    position: absolute;
+    right: 0px;
+    margin-bottom: 10px;
+    padding-right: 25px;
+}
+
+footer li{
+    float: left;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+footer img{
+    height: 25px;
+    width: 25px;
+}
