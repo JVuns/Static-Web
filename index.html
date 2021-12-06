@@ -7,7 +7,8 @@
         <style>
             @media (max-width:1400px){
                 .header-style h1{
-                    margin-top: 30px;
+                    margin-top: 40px;
+                    font-size: 18px;
                 
                 }
                 .menu-bar{
@@ -119,15 +120,38 @@
               }
               </script>
         </header>
-        <div class="title-style">
-            <div class="black-pane">
-            <h1><b><b></h1>
-            <div>
-            <a href="AboutUs.html" class="aboutbtn">More about us</a>
-            <a href="Contact.html" class="contactbtn">Contact us</a>
-            </div>
-            </div>
-        </div>
+        <div class="container black-pane">
+            <img class="mySlides fade" src="img/Activity.jpeg" style="width:1600px; height:500px">
+            <img class="mySlides fade" src="img/Activity2.jpeg" style="width:1600px; height:500px">
+            <img class="mySlides fade" src="img/Activity4.jpeg" style="width:1600px; height:500px">
+            <p class="slide-context">Kegiatan pengecatan untuk instalasi pipa hydrant RS Kanujoso.</p>
+            <p class="slide-context">Instalasi pipa hydrant untuk RS Kanujoso</p>
+            <p class="slide-context">Kegiatan safety talk sebelum memulai kegiatan.</p>
+            <button class="leftbtn button" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="rightbtn button" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var y = document.getElementsByClassName("slide-context")
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+                y[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";  
+              y[slideIndex-1].style.display = "block";  
+            }
+            </script>
         <div class="home-content"></div>
         <footer>
             <p style="padding: 15px 15px 15px 15px;">PT AGUNG TETRADAHAYU TEKNIK ©</p>
