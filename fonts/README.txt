@@ -1,36 +1,23 @@
-Exo 2 Variable Font
-===================
+Oswald Variable Font
+====================
 
-This download contains Exo 2 as both variable fonts and static fonts.
+This download contains Oswald as both a variable font and static fonts.
 
-Exo 2 is a variable font with this axis:
+Oswald is a variable font with this axis:
   wght
 
-This means all the styles are contained in these files:
-  Exo2-VariableFont_wght.ttf
-  Exo2-Italic-VariableFont_wght.ttf
+This means all the styles are contained in a single file:
+  Oswald-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Exo 2:
-  static/Exo2-Thin.ttf
-  static/Exo2-ExtraLight.ttf
-  static/Exo2-Light.ttf
-  static/Exo2-Regular.ttf
-  static/Exo2-Medium.ttf
-  static/Exo2-SemiBold.ttf
-  static/Exo2-Bold.ttf
-  static/Exo2-ExtraBold.ttf
-  static/Exo2-Black.ttf
-  static/Exo2-ThinItalic.ttf
-  static/Exo2-ExtraLightItalic.ttf
-  static/Exo2-LightItalic.ttf
-  static/Exo2-Italic.ttf
-  static/Exo2-MediumItalic.ttf
-  static/Exo2-SemiBoldItalic.ttf
-  static/Exo2-BoldItalic.ttf
-  static/Exo2-ExtraBoldItalic.ttf
-  static/Exo2-BlackItalic.ttf
+in those cases you can use the static font files for Oswald:
+  static/Oswald-ExtraLight.ttf
+  static/Oswald-Light.ttf
+  static/Oswald-Regular.ttf
+  static/Oswald-Medium.ttf
+  static/Oswald-SemiBold.ttf
+  static/Oswald-Bold.ttf
 
 Get started
 -----------
