@@ -27,7 +27,7 @@
       color: black;
   }
   
-  .dropdown:hover .dropdown-content {
+  .drop:hover .drop-content {
     display: block;
   }
 
@@ -125,7 +125,6 @@ body{
 
 .title-style h1{
     margin-top: 100px;
-    
 }
 
 .aboutbtn{
@@ -187,7 +186,7 @@ body{
     position: relative;
     background-color:#fef8bf;
     top: 0px;
-    height: 600px;
+    height: 800px;
     width: 100%;
     box-shadow: 0px -1px 40px 0px;
 }
@@ -196,11 +195,21 @@ body{
     position: relative;
 }
 
-.content1{
-    padding: 10px 10px 10px 10px;
-    height: 200px;
+.wrapper{
+    padding: 10px 0px 0px 0px;
+    height: 100%;
     width: 100%;
     font-family: "Chloe";
+}
+
+.content1{
+    padding: 10px 10px 10px 10px;
+    height: 570px;
+    width: 350px;
+    border-style: solid;
+    margin-left: 15px;
+    margin-top: 15px;
+    box-shadow: 1px 5px 5px 0px;
 }
 
 .content1 p{
@@ -239,7 +248,7 @@ footer img{
     width: 25px;
 }
 
-.dropdown {
+.drop {
   position: relative;
   display: inline-block;
 }
@@ -256,17 +265,21 @@ footer img{
     color: black;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 .maprouter{
     position: absolute;
     margin-right: 0px;
     right: 0px;
 }
 
-map-container{
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.map-container{
     position: absolute;
-    margin-right: 0px;
+    display: none;
+    top: 250px;
+    height: 500px;
+    width: 600px;
 }

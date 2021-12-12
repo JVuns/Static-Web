@@ -4,6 +4,67 @@
         <link rel="stylesheet" href="OurPeople.css">
         <link rel="icon" type="image/png" href="img/LogoATT_TMR-min.png">
         <title>ATT</title>
+        <style>
+            @media (max-width:1400px){
+                .header-style h1{
+                    margin-top: 40px;
+                    font-size: 18px;
+                
+                }
+                .menu-bar{
+                    display: none
+                }
+                .menu-bar-mini{
+                    display: block;
+                }
+            }
+            @media (min-width:1400px){
+                .menu-bar-mini{
+                    display: none;
+                }
+            }
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            #main {
+                margin-top: 15px;
+                position: fixed;
+                right: 0px;
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+        </style>
     </head>
     <body>
         <!-- <img src="img/Technician2.jpg" class="background-style1"> -->
@@ -11,7 +72,7 @@
             <a href="index.html"><img src="img/LogoATT_TMR-min.png" class="logo-style"></a>
             <h1><b>WE GIVE BETTER SENSIBILITY</b></h1>
             <ul class="menu-bar">
-                <li><a href='AboutUs.html'>
+                <li><a href='#'>
                     <div class="dropdown">
                         <span>Get to know us</span>
                         <div class="dropdown-content">
@@ -32,8 +93,48 @@
                 </a></li>
                 <li><a href='Contact.html'>Contact info</a></li>
                 <li><a href='#'>Our business</a></li>
-                <li><a href="#">Human resource</a></li>
+                <li><a href='#'>
+                    <div class="dropdown">
+                        <span>Our People</span>
+                        <div class="dropdown-content" style="right: -15px;">
+                            <a style="position: relative;
+                                        margin-left: 5px;
+                                        margin-top: 20px;
+                                        margin-right: 5px;" href="AboutUs.html">Tenaga Ahli</a> <br><br><br>
+                            <a style="position: relative;
+                                        margin-left: 0px;
+                                        margin-top: 20px;
+                                        margin-right: 0px;
+                                        margin-bottom: 20px;
+                                        " href="AreaManager.html">Area Manager</a>
+                        </div>
+                    </div> 
+                </a></li>
             </ul>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="AboutUs.html">Get to know us</a>
+                <a href="Contact.html">Contact info</a>
+                <a href="#">Our business</a>
+                <a href="#">Human resource</a>
+              </div>
+              <div id="main">
+                <span class="menu-bar-mini" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+              </div>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "300px";
+                document.getElementById("main").style.marginLeft = "-250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+              }
+              </script>
         </header>
         <footer>
             <p style="padding: 15px 15px 15px 15px;">PT AGUNG TETRADAHAYU TEKNIK ©</p>
